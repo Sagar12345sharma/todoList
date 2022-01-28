@@ -1,0 +1,47 @@
+@import "./layout.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  border: 3px solid #040437;
+  border-radius: 4px;
+  height: 38px;
+  padding-left: 11px;
+  font-size: 16px;
+}
+
+.btn {
+  margin: 1px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 700;
+  color: white;
+  background: rgb(2, 0, 36);
+  // background: linear-gradient(
+  //   90deg,
+  //   rgba(2, 0, 36, 1) 5%,
+  //   rgba(0, 212, 255, 1) 100%
+  // );
+}
+
+.container2 {
+  @include displayFlexMixin;
+  width: 100%;
+  flex-direction: column;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.css-i4bv87-MuiSvgIcon-root {
+  color: white;
+}
+
+.input-addpost-search {
+  width: 400px;
+  display: flex;
+  justify-content: $justify-Content;
+}

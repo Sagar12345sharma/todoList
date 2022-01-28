@@ -1,0 +1,8 @@
+$justify-Content: space-around;
+$backGround-color: #080e61;
+$justify-SpaceBetween: space-between;
+
+@mixin displayFlexMixin {
+  display: flex;
+  justify-content: center;
+}

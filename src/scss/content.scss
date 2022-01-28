@@ -1,0 +1,73 @@
+@import "./layout.scss";
+
+@mixin center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.key_content {
+  @include displayFlexMixin;
+  margin: 2px;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+}
+
+.key-content.btns-container {
+  @include displayFlexMixin;
+  flex-direction: row;
+}
+
+.expand_contract_btns {
+  @include displayFlexMixin;
+  flex-direction: row;
+  cursor: pointer;
+}
+
+.keyContainer {
+  flex-direction: row;
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.btn {
+  margin: 1px;
+  border: 1px solid #715f5f;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 700;
+  color: white;
+}
+
+.displayFlex {
+  display: flex;
+  flex-direction: column;
+}
+
+.displayFlex > .displayFlex.margin10px {
+  border-radius: 5px;
+  margin-left: 70px;
+}
+
+.addpostcontainer,
+.editpostcontainer {
+  margin: 10px;
+}
+
+.key-content.btns-container {
+  @include displayFlexMixin;
+  width: 300px;
+  justify-content: $justify-SpaceBetween;
+  height: 50px;
+  align-items: center;
+}
+
+.addbtn {
+  @include displayFlexMixin;
+  width: 155px;
+  justify-content: $justify-Content;
+}
